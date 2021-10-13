@@ -1,8 +1,10 @@
 import { Grid, Typography } from '@material-ui/core';
 import React from 'react';
 import Menu from '../Menu/Menu';
-import './Header.css'
-
+import './Header.css';
+import ButtonLink from '../Button/ButtonLink'; 
+import ButtonPopup from '../Button/ButtonPopup';
+import IconButton from '../../Assets/Images/arrow.png';
 function Header() {
     return (
         <div className="header">
@@ -14,6 +16,8 @@ function Header() {
                     <span className="text-3">Là niềm hạnh phúc của </span>
                     <span className="text-4">Huyền Phi</span>
                 </Typography>
+                <ButtonLink text="NHẬN ƯU ĐÃI" link="link" position="left down" icon={IconButton}/>
+                <ButtonPopup text="NHẬN ƯU ĐÃI" link="link" position="right up" icon={IconButton}/>
             </Grid>
         </div>
     );

@@ -1,0 +1,43 @@
+#button{
+    position: relative;
+    height: 45px;
+    background-color: #8158AA; 
+    font-size: 18px;
+    color:#fff;
+    line-height: 2.6;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    outline: none;
+} 
+#button:hover,a:hover{
+    opacity: .8;
+}
+#button span{ 
+    position: absolute;
+    top: 54%;
+    right: 15px;
+    transform: translate(0,-50%) rotate(0);
+}
+.left span{
+    left: 15px; 
+    right: unset !important; 
+    transform: translate(0,-68%) rotate(180deg) !important
+}
+.right span{
+    right: 15px; 
+}
+.left{
+    padding: 0 15px 0 50px;
+}
+.right{
+    padding: 0 50px 0 15px;
+}
+.up span{ 
+    transform: translate(0,-62%) rotate(-90deg) !important
+}
+.down span{  
+    transform: translate(0,-62%) rotate(90deg) !important
+}
