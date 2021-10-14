@@ -1,0 +1,24 @@
+.home-page .about .content{
+    background-color: #6F528C;
+    color:#fff; 
+    padding: 115px 60px;
+    position: relative;
+}
+.home-page .about .content h2{
+    font-size: 36px;
+    font-family: ArimaMadurai;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.home-page .about .content p{
+    width: 77%; 
+    font-size: 18px;
+}
+.home-page .about .content .image{
+    position: absolute;
+    bottom: -50%;
+    right: -22%;
+}
+.home-page .news{
+    margin-top: 180px;
+}

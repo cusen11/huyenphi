@@ -62,8 +62,18 @@
 }
 
 body {
-  margin: 0;
-  font-family: 'Fakt-Pro', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Fakt-Pro', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+h1,h2,h3,h4,h5{
+    font-family: ArimaMadurai !important;
+    font-weight: 600 !important;
+}
+.hp-w1300{
+    width: 1300px !important;
+    margin: auto;
 }
