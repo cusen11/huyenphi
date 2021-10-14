@@ -75,5 +75,6 @@ h1,h2,h3,h4,h5{
 }
 .hp-w1300{
     width: 1300px !important;
+    max-width: 100%;
     margin: auto;
 }

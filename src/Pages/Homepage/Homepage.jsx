@@ -1,9 +1,28 @@
 import { Grid, Typography } from '@material-ui/core';
 import React from 'react';
-import './Homepage.css'
-import ImgAbout from '../../Assets/Images/about.png'
+import './Homepage.css';
+import ImgAbout from '../../Assets/Images/about.png';
+import ImgItem from '../../Assets/Images/card-img.png';
+import NextArrow from '../../Assets/Images/arrow-right.png';
+import PrevArrow from '../../Assets/Images/arrow-left.png'; 
 import Title from '../../Components/Title/Title';
+import Arrow from '../../Components/Arrow/Arrow';
+import Card from '../../Components/Card/Card';
+import Slider from "react-slick";
+
+
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 function Homepage() {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1, 
+        nextArrow: <Arrow img={NextArrow} left={false} />,
+        prevArrow: <Arrow img={PrevArrow} left={true}/>
+    };
     return (
         <>
             <Grid className="home-page">
@@ -23,6 +42,16 @@ function Homepage() {
                 </Grid>
                 <Grid className="news hp-w1300">
                     <Title title="Mẹo làm đẹp"/>
+                    <Slider {...settings}>
+                        <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
+                        <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
+                        <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
+                        <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
+                        <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
+                        <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
+                        <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
+                        <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
+                    </Slider> 
                 </Grid>
             </Grid>
         </>

@@ -1,0 +1,22 @@
+.card img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card .content{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding:15px;
+    background-color: #6F528C;
+}
+.card h4{
+    text-align: left;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+.card p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+}
