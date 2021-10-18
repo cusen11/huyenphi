@@ -4,7 +4,7 @@ function CommingSoon(props) {
     const {title} = props
     return (
         <>
-            <h1>Trang {title} sẽ đang cập nhật</h1>
+            <h1 style={{height:'100vh',display:'flex',justifyContent:'center',alignItems:'center'}}>Trang {title} đang cập nhật</h1>
         </>
     );
 }

@@ -21,11 +21,7 @@ import Title from '../../Components/Title/Title';
 import Arrow from '../../Components/Arrow/Arrow';
 import Card from '../../Components/Card/Card';
 import Slider from "react-slick";
-import ButtonLink from '../../Components/Button/ButtonLink'
-
-
-import "slick-carousel/slick/slick.css"; 
-import "slick-carousel/slick/slick-theme.css";
+import ButtonLink from '../../Components/Button/ButtonLink' 
 function Homepage() {
     const settings = {
         dots: true,
@@ -56,16 +52,19 @@ function Homepage() {
                 </Grid>
                 <Grid className="news hp-w1300">
                     <Title title="Mẹo làm đẹp"/>
-                    <Slider {...settings}>
-                        <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
-                        <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
-                        <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
-                        <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
-                        <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
-                        <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
-                        <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
-                        <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
-                    </Slider> 
+                    <Grid className='slide-top'>
+                        <Slider {...settings}>
+                            <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
+                            <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
+                            <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
+                            <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
+                            <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
+                            <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
+                            <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
+                            <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
+                        </Slider> 
+                    </Grid>
+                    <Grid align='right'><ButtonLink text='Xem thêm' icon={ArrowBtn} position='right' link='/news'/></Grid>
                 </Grid>
                 <Grid className="reason hp-w1300">
                     <Title title="Huyền Phi lý do bạn nên lựa chọn"/>

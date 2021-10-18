@@ -14,10 +14,10 @@ function Menu() {
                 </Grid>
                 <Grid className="item-menu-header" item md={4} container justifyContent="flex-end" alignItems='center'>
                     <li align='center'><Link to='/news'>Tin tức</Link></li>
-                    <li align='center'><Link to='/contact'>Liên hệ</Link></li>
+                    <li align='center'><Link to='/products'>Sản phẩm</Link></li>
                 </Grid>
             </Grid>
-            <img src={logo} alt="logo huyền phi" />
+            <Link to='/'><img src={logo} alt="logo huyền phi" /></Link>
        </Grid>
     );
 }
