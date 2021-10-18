@@ -2,18 +2,19 @@ import { Grid } from '@material-ui/core';
 import React from 'react';
 import './menu.css';
 import logo from '../../Assets/Images/logo.png'
+import { Link } from 'react-router-dom';
 
 function Menu() {
     return (
        <Grid className="menu-header-top">
            <Grid className="menu-header" container justifyContent='space-between'>
                 <Grid className="item-menu-header" container item md={4} alignItems='center'>
-                    <li align='center'>Trang chủ</li>
-                    <li align='center'> Giới thiệu</li>
+                    <li align='center'><Link to='/'>Trang chủ</Link></li>
+                    <li align='center'><Link to='/about'>Giới thiệu</Link></li>
                 </Grid>
                 <Grid className="item-menu-header" item md={4} container justifyContent="flex-end" alignItems='center'>
-                    <li align='center'>Tin tức</li>
-                    <li align='center'> Liên hệ</li>
+                    <li align='center'><Link to='/news'>Tin tức</Link></li>
+                    <li align='center'><Link to='/contact'>Liên hệ</Link></li>
                 </Grid>
             </Grid>
             <img src={logo} alt="logo huyền phi" />

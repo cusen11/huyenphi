@@ -29,25 +29,14 @@
 .slick-slide .card{
     padding: 0 30px;
 }
-.slick-dots li button:before {
-    font-family: 'slick';
-    font-size: 10px;
-    line-height: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    content: '•';
-    text-align: center;
-    opacity: 1;
-    color: #dddd;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+.slick-dots li button:before { 
+    font-size: 10px !important; 
+    opacity: 1 !important;
+    color: #dddd !important; 
 }
 .slick-dots li.slick-active button:before {
-    opacity: 1;
-    color: #6f528c;
+    opacity: 1 !important;
+    color: #6f528c !important;
 }
 .home .news{
     margin-top: 60px;

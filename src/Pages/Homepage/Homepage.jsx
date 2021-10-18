@@ -1,7 +1,17 @@
 import { Grid, Typography } from '@material-ui/core';
 import React from 'react';
 import './Homepage.css';
+import Header from '../../Components/Header/Header';
 import ImgAbout from '../../Assets/Images/about.png';
+import ImgMedia1 from '../../Assets/Images/media-01.png';
+import ImgMedia2 from '../../Assets/Images/media-02.png';
+import ImgMedia3 from '../../Assets/Images/media-03.png';
+import ImgMedia4 from '../../Assets/Images/media-04.png';
+import ImgMedia5 from '../../Assets/Images/media-05.png';
+import ImgMedia6 from '../../Assets/Images/media-06.png';
+import ImgMedia7 from '../../Assets/Images/media-07.png';
+import ImgMedia8 from '../../Assets/Images/media-08.png';
+import ImgMedia9 from '../../Assets/Images/media-09.png';
 import ArrowBtn from '../../Assets/Images/arrow.png';
 import StartIMG from '../../Assets/Images/start.png';
 import ImgItem from '../../Assets/Images/card-img.png';
@@ -28,6 +38,7 @@ function Homepage() {
     };
     return (
         <>
+            <Header/>
             <Grid className="home-page">
                 <Grid className="about" container justifyContent="space-between">
                     <Grid item className="content" md={9}>
@@ -105,7 +116,40 @@ function Homepage() {
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" price="299.000đ" /> 
                         </Grid>
                     </Grid>
-                    <Grid align='right'><ButtonLink text='Xem thêm' icon={ArrowBtn} position='right' link='#'/></Grid>
+                    <Grid align='right'><ButtonLink text='Xem thêm' icon={ArrowBtn} position='right' link='/products'/></Grid>
+                </Grid>
+                <Grid className="media hp-w1300">
+                    <Title title="Thư viện"/>
+                    <Grid container justifyContent='space-between' alignItems="flex-start" spacing={2}>
+                        <Grid item md={4}>
+                            <img src={ImgMedia1} alt='media' />
+                        </Grid>
+                        <Grid item md={4}> 
+                            <img src={ImgMedia2} alt='media' />
+                        </Grid>
+                        <Grid item md={4}> 
+                            <img src={ImgMedia3} alt='media' />
+                        </Grid>
+                        <Grid item md={4}> 
+                            <img src={ImgMedia4} alt='media' />
+                        </Grid>
+                        <Grid item md={4}> 
+                            <img src={ImgMedia5} alt='media' />
+                        </Grid>
+                        <Grid item md={4}> 
+                            <img src={ImgMedia6} alt='media' />
+                        </Grid>
+                        <Grid item md={4}> 
+                            <img src={ImgMedia7} alt='media' />
+                        </Grid>
+                        <Grid item md={4}> 
+                            <img src={ImgMedia8} alt='media' /> 
+                        </Grid>
+                        <Grid item md={4}> 
+                            <img src={ImgMedia9} alt='media' /> 
+                        </Grid>
+                    </Grid>
+                    <Grid align='right'><ButtonLink text='Xem thêm' icon={ArrowBtn} position='right' link='/media'/></Grid>
                 </Grid>
             </Grid>
         </>

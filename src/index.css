@@ -60,11 +60,12 @@
     font-style: normal;
     font-display: swap;
 }
-
-body {
-    box-sizing: border-box;
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body { 
     font-family: 'Fakt-Pro', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

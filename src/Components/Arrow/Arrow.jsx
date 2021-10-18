@@ -7,14 +7,16 @@ function Arrow(props) {
         left : '-50px',
         top: '50%',
         transform: 'translate(0,-50%)',
-        zIndex:'100'
+        zIndex:'100',
+        cursor:'pointer'
     }
     const styleRight= {
         position: 'absolute',
         right : '-50px',
         top: '50%',
         transform: 'translate(0,-50%)',
-        zIndex:'100' 
+        zIndex:'100',
+        cursor:'pointer' 
     }
     return (
         <>

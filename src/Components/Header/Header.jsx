@@ -1,13 +1,11 @@
 import { Grid, Typography } from '@material-ui/core';
-import React from 'react';
-import Menu from '../Menu/Menu';
+import React from 'react'; 
 import './Header.css'; 
 import ButtonPopup from '../Button/ButtonPopup';
 import IconButton from '../../Assets/Images/arrow.png';
 function Header() {
     return (
-        <div className="header">
-            <Menu/>
+        <div className="header"> 
             <Grid container className="header_hero" justifyContent="flex-start" alignItems="center">
                 <Grid item className="header_hero-text">
                     <Typography variant="h1">
