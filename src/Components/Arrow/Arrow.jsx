@@ -4,14 +4,14 @@ function Arrow(props) {
     const { img, onClick,left} = props;
     const styleLeft= {
         position: 'absolute',
-        left : 0,
+        left : '-50px',
         top: '50%',
         transform: 'translate(0,-50%)',
         zIndex:'100'
     }
     const styleRight= {
         position: 'absolute',
-        right : 0,
+        right : '-50px',
         top: '50%',
         transform: 'translate(0,-50%)',
         zIndex:'100' 

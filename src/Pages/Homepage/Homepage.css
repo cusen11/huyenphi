@@ -22,6 +22,33 @@
 .home-page .news{
     margin-top: 180px; 
 } 
+.slick-slider{
+    width: 90%;
+    margin: auto;
+}
 .slick-slide .card{
-    padding: 0 20px;
+    padding: 0 30px;
+}
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 10px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: 1;
+    color: #dddd;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #6f528c;
+}
+.home .news{
+    margin-top: 60px;
 }

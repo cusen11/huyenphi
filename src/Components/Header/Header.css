@@ -30,7 +30,7 @@
     color: transparent;
     -webkit-text-stroke:1px #8158AA;
     font-size: 18px;
-    margin: 20px 0;
+    margin-top: 20px;
 }
 .header .header_hero-text span.text-1{
     font-size: 24px;
