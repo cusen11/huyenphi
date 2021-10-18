@@ -31,7 +31,7 @@
     transition: all 0.3s;
 }
 .menu-header li:hover{
-    color:#6f528c;
+    opacity: 0.8;
 }
 .menu-header-top img{
     position: absolute;
