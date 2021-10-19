@@ -25,12 +25,45 @@ import ButtonLink from '../../Components/Button/ButtonLink'
 function Homepage() {
     const settings = {
         dots: true,
-        infinite: true,
-        speed: 500,
+        infinite: true, 
         slidesToShow: 4,
         slidesToScroll: 1, 
         nextArrow: <Arrow img={NextArrow} left={false} />,
-        prevArrow: <Arrow img={PrevArrow} left={true}/>
+        prevArrow: <Arrow img={PrevArrow} left={true}/>,
+        speed: 1000,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        cssEase: "linear",
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3, 
+                nextArrow: false,
+                prevArrow: false, 
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                initialSlide: 2,
+                nextArrow: false,
+                prevArrow: false, 
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                nextArrow: false,
+                prevArrow: false, 
+              }
+            }
+          ]
     };
     return (
         <>
@@ -63,25 +96,24 @@ function Homepage() {
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc"/>
                         </Slider> 
-                    </Grid>
-                    <Grid align='right'><ButtonLink text='Xem thêm' icon={ArrowBtn} position='right' link='/news'/></Grid>
+                    </Grid> 
                 </Grid>
                 <Grid className="reason hp-w1300">
                     <Title title="Huyền Phi lý do bạn nên lựa chọn"/>
-                    <Grid container justifyContent='space-between' alignItems="flex-start" spacing={4}>
-                        <Grid item md={3} align='center'>
+                    <Grid container justifyContent='space-between' alignItems="flex-start" spacing={2}>
+                        <Grid item md={3} xs={6} align='center'>
                             <img src={StartIMG} alt="start" />
                             <Typography> Thành phần sản phẩm được chiết xuất chủ yếu từ các dược liệu có nguồn gốc thiên nhiên</Typography>
                         </Grid>
-                        <Grid item md={3} align='center'>
+                        <Grid item md={3} xs={6} align='center'>
                             <img src={StartIMG} alt="start" />
                             <Typography align='center'> Sản phẩm an toàn cho mọi loại da, từ da khô, da dầu, da hỗn hợp cho tới da nhạy cảm</Typography>
                         </Grid>
-                        <Grid item md={3} align='center'>
+                        <Grid item md={3} xs={6} align='center'>
                             <img src={StartIMG} alt="start" />
-                            <Typography align='center'> TSản phẩm đã được Sở Y Tế chứng nhận và cấp phép trên thị trường </Typography>
+                            <Typography align='center'> Sản phẩm đã được Sở Y Tế chứng nhận và cấp phép trên thị trường </Typography>
                         </Grid>
-                        <Grid item md={3} align='center'>
+                        <Grid item md={3} xs={6} align='center'>
                             <img src={StartIMG} alt="start" />
                             <Typography align='center'> MIỄN PHÍ SHIP đối với tất cả đơn hàng trên toàn quốc.</Typography>
                         </Grid>
@@ -89,29 +121,29 @@ function Homepage() {
                 </Grid>
                 <Grid className="products hp-w1300">
                     <Title title="Sản phẩm"/>
-                    <Grid container justifyContent='space-between' alignItems="flex-start" spacing={4}>
-                        <Grid item md={3}>
+                    <Grid container justifyContent='space-between' alignItems="flex-start" spacing={2}>
+                        <Grid item md={3} xs={6}>
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" price="299.000đ" />
                         </Grid>
-                        <Grid item md={3}> 
+                        <Grid item md={3} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" price="299.000đ" />
                         </Grid>
-                        <Grid item md={3}> 
+                        <Grid item md={3} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" price="299.000đ" />
                         </Grid>
-                        <Grid item md={3}> 
+                        <Grid item md={3} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" price="299.000đ" />
                         </Grid>
-                        <Grid item md={3}> 
+                        <Grid item md={3} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" price="299.000đ" />
                         </Grid>
-                        <Grid item md={3}> 
+                        <Grid item md={3} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" price="299.000đ" />
                         </Grid>
-                        <Grid item md={3}> 
+                        <Grid item md={3} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" price="299.000đ" />
                         </Grid>
-                        <Grid item md={3}> 
+                        <Grid item md={3} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" price="299.000đ" /> 
                         </Grid>
                     </Grid>
@@ -120,31 +152,31 @@ function Homepage() {
                 <Grid className="media hp-w1300">
                     <Title title="Thư viện"/>
                     <Grid container justifyContent='space-between' alignItems="flex-start" spacing={2}>
-                        <Grid item md={4}>
+                        <Grid item md={4} xs={6}>
                             <img src={ImgMedia1} alt='media' />
                         </Grid>
-                        <Grid item md={4}> 
+                        <Grid item md={4} xs={6}> 
                             <img src={ImgMedia2} alt='media' />
                         </Grid>
-                        <Grid item md={4}> 
+                        <Grid item md={4} xs={6}> 
                             <img src={ImgMedia3} alt='media' />
                         </Grid>
-                        <Grid item md={4}> 
+                        <Grid item md={4} xs={6}> 
                             <img src={ImgMedia4} alt='media' />
                         </Grid>
-                        <Grid item md={4}> 
+                        <Grid item md={4} xs={6}> 
                             <img src={ImgMedia5} alt='media' />
                         </Grid>
-                        <Grid item md={4}> 
+                        <Grid item md={4} xs={6}> 
                             <img src={ImgMedia6} alt='media' />
                         </Grid>
-                        <Grid item md={4}> 
+                        <Grid item md={4} xs={6}> 
                             <img src={ImgMedia7} alt='media' />
                         </Grid>
-                        <Grid item md={4}> 
+                        <Grid item md={4} xs={6}> 
                             <img src={ImgMedia8} alt='media' /> 
                         </Grid>
-                        <Grid item md={4}> 
+                        <Grid item md={4} xs={6}> 
                             <img src={ImgMedia9} alt='media' /> 
                         </Grid>
                     </Grid>

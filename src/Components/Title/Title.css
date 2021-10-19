@@ -5,3 +5,14 @@
 .title h3{ 
     font-size: 36px;
 }
+.title img{
+    margin: auto;
+}
+@media screen and (max-width: 1024px) {
+    .title{ 
+        margin-bottom: 15px;
+    }
+    .title h3{ 
+        font-size: 28px;
+    }  
+}

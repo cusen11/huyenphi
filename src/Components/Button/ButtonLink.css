@@ -44,3 +44,14 @@
 .down span{  
     transform: translate(0,-62%) rotate(90deg) !important
 }
+@media screen and (max-width: 1024px) {
+    #button{ 
+        height: 35px; 
+        font-size: 14px; 
+        margin-top: 10px;
+        margin-left: 0;
+    } 
+    #button span{
+        top: 62%;
+    }
+}

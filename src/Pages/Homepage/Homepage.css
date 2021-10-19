@@ -21,13 +21,9 @@
 }
 .home-page .news{
     margin-top: 180px; 
-} 
-.slide-top .slick-slider{
-    width: 90%;
-    margin: auto;
-}
+}  
 .slick-slide .card{
-    padding: 0 30px;
+    padding: 0 20px;
 }
 .slick-dots li button:before { 
     font-size: 10px !important; 
@@ -41,3 +37,31 @@
 .home .news{
     margin-top: 60px;
 }
+.slick-dots{
+    bottom: -35px !important;
+}
+@media screen and (max-width: 1024px) { 
+    .home-page .about .image{
+        display: none;
+    }
+    .home-page .about .content{
+        padding: 35px 30px;
+    }
+    .home-page .about .content p{
+        width: 100%;
+        font-size: 16px;
+    }
+    .home-page .news{
+        margin-top: 30px; 
+    }
+    .slick-slide .card{
+        padding: 0 10px;
+    }
+    .slick-next,.slick-prev{
+        display: none !important;
+    }
+    .home-page .news #button{
+        margin-top: 50px;
+        margin-right: 10px;
+    }     
+} 

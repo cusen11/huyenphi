@@ -11,11 +11,14 @@ import ArrowBtn from '../../Assets/Images/arrow.png';
 function News() {
     const settings = {
         dots: true,
-        infinite: true,
-        speed: 500,
+        infinite: true, 
         arrows:false,
         slidesToShow: 1,
-        slidesToScroll: 1,  
+        slidesToScroll: 1, 
+        speed: 500,
+        autoplay: true,
+        autoplaySpeed: 6000,
+        cssEase: "linear", 
     };
     return (
         <>
@@ -29,41 +32,41 @@ function News() {
                 </Slider> 
                 <Grid className="hp-w1300">
                     <Title title="Tin tổng hợp"/>
-                    <Grid container justifyContent='space-between' alignItems="flex-start" spacing={4}>
-                        <Grid item md={2}>
+                    <Grid container justifyContent='space-between' alignItems="flex-start" spacing={2}>
+                        <Grid item md={2} xs={6}>
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" /> 
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" /> 
                         </Grid> 
                     </Grid>
@@ -74,41 +77,41 @@ function News() {
                 </Grid>
                 <Grid className="hp-w1300">
                     <Title title="Tin mỹ phẩm"/>
-                    <Grid container justifyContent='space-between' alignItems="flex-start" spacing={4}>
-                        <Grid item md={2}>
+                    <Grid container justifyContent='space-between' alignItems="flex-start" spacing={2}>
+                        <Grid item md={2} xs={6}>
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" /> 
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" /> 
                         </Grid> 
                     </Grid>
@@ -119,41 +122,41 @@ function News() {
                 </Grid>
                 <Grid className="hp-w1300">
                     <Title title="Mẹo làm đẹp"/>
-                    <Grid container justifyContent='space-between' alignItems="flex-start" spacing={4}>
-                        <Grid item md={2}>
+                    <Grid container justifyContent='space-between' alignItems="flex-start" spacing={2}>
+                        <Grid item md={2} xs={6}>
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" /> 
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" />
                         </Grid>
-                        <Grid item md={2}> 
+                        <Grid item md={2} xs={6}> 
                             <Card image={ImgItem} title="Tắm trắng thuốc bắc" /> 
                         </Grid> 
                     </Grid>
