@@ -12,7 +12,7 @@ function Menu() {
            <Grid className={isActive ? "menu-header active" : "menu-header"} container justifyContent='space-between'>
                 <Grid className="item-menu-header" container item md={4} alignItems='center'>
                     <li align='center'><Link to='/'>Trang chủ</Link></li>
-                    <li align='center'><Link to='/about'>Giới thiệu</Link></li>
+                   {/* <li align='center'><Link to='/about'>Giới thiệu</Link></li> */}
                 </Grid>
                 <Grid className="item-menu-header" item md={4} container justifyContent="flex-end" alignItems='center'>
                     <li align='center'><Link to='/news'>Tin tức</Link></li>
